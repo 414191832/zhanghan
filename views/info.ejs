@@ -21,19 +21,31 @@
 		<footer>
 			<div class="footl">
 				<h3>Send us feedback</h3>
-				<p>Name</p>
 				<form action="http://localhost:8080/create" method="POST">
-				<input type="text" name="message" placeholder="Enter your name" />
-				<p>Title</p>
-				<input type="text" name="name" placeholder="Title of your feedback"/>
-				<p>Message</p>
-				<textarea name="texts"  placeholder="Enter your message,then hit the submit"></textarea>
-				<button>Sumbit</button>
-				</form>
+					<p>Name</p>
+					<input type="text" name="message" id="put-1"><br />
+					<p>Title</p>
+					<input type="text" name="name" id="put-2"><br />
+					<p>Message</p>
+					<textarea name="texts">welcome to our china</textarea><br />
+					<button>sumbit</button>
+					</form>
 			</div>
 			<div class="footr">
 				<h3>Recent Feedback</h3>
-				
+				<% for(var i =0;i<data.length;i++){ %>
+			<div class="foot">
+				<img src="../han/img/x.png"/>
+				<%= data[i].message %>
+				<a class="a"><%= data[i].name %></a>
+				<br>
+				<p><%= data[i].texts %></p>
+				<hr>
+			</div>
+			
+			<% } %>
+
+
 			</div>
 		</footer>
 	</body>

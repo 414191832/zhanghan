@@ -91,16 +91,8 @@ button{
 	font-size: 25px;
 	margin-bottom: 25px;
 }
-.li{
-	width: 750px;
-	height: 67px;
-	border-bottom: 1px solid #CCCCCC;
-	margin-bottom: 24px;
-}
-.li:last-of-type{
-	border-bottom: none;
-}
-.li a{
+
+.a{
 	padding: 0 10px;
 	height: 25px;
 	border-radius:2px;
@@ -111,12 +103,16 @@ button{
 	color: white;
 	font-size: 14px;
 }
+.foot{
+	margin-bottom: 24px;
+}
 .li img{
 	float: left;
 }
 .li span{
 	margin: 0 7px 0 11px;
 }
-.li p{
+.foot p{
 	margin-left: 30px;
+	margin-bottom: 10px;
 }
